@@ -23,6 +23,8 @@ const inverseIcon = require('./images/inverse.png');
 
 const makeExample = (name, getJson, width) => ({ name, getJson, width });
 const EXAMPLES = [
+  makeExample('Ball', () => require('./animations/ball.json'), 200),
+  makeExample('WN_01', () => require('./animations/WN_01.json'), 360),
   makeExample('Hamburger Arrow', () => require('./animations/HamburgerArrow.json')),
   makeExample('Hamburger Arrow (200 px)', () => require('./animations/HamburgerArrow.json'), 200),
   makeExample('Line Animation', () => require('./animations/LineAnimation.json')),
